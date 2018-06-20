@@ -33,7 +33,7 @@ void loop() {
 CAYENNE_OUT_DEFAULT()
 {
   //Publish data every 1 seconds (1000 milliseconds). Change this value to publish at a different interval.
-  if(millis() - lastMillis > 5000) {
+  if(millis() - lastMillis > 1000) {
     lastMillis = millis();
     sensors_event_t event;  
     dht.temperature().getEvent(&event);
